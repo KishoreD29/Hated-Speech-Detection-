@@ -201,20 +201,4 @@ if __name__ == "__main__":
 # model = DecisionTreeClassifier()
 # model.fit(X, y)
 
-# # Home route
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
 
-# # Predict route
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     if request.method == 'POST':
-#         text = request.form['text']
-#         cleaned_text = clean(text)
-#         vect = cv.transform([cleaned_text]).toarray()
-#         prediction = model.predict(vect)
-#         return render_template('index.html', prediction=prediction[0])
-
-# if __name__ == "_main_":
-#     app.run(debug=True)
